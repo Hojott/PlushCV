@@ -1,0 +1,275 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% PlushCV - One Page Two Column Resume
+% LaTeX Template
+% Version 1.0 (11/28/2021)
+%
+% Author:
+% Shubham Mazumder (http://mazumder.me)
+%
+% Hacked together from:
+% https://github.com/deedydas/Deedy-Resume
+%
+% IMPORTANT: THIS TEMPLATE NEEDS TO BE COMPILED WITH XeLaTeX
+%
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 
+% TODO:
+% 1. Figure out a smoother way for the document to flow onto the next page.
+% 3. Add more icon options 
+% 4. Fix hacky left alignment on contact line
+% 5. Remove Hacky fix for awkward extra vertical space
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% CHANGELOG:
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Known Issues:
+% 1. Overflows onto second page if any column's contents are more than the vertical limit.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%Icons:
+%%Main: https://icons8.com/icons/carbon-copy
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[]{plushcv}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     TITLE NAME
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\namesection{Sakari}{Marttinen}{Full Stack Developer}{\contactline{\href{https://www.kussi.fi}{kussi.fi}}{\href{https://www.github.com/hojott}{Hojott}}{\href{https://www.linkedin.com/in/kussi}{kussi}}{\href{mailto:sakkenino@gmail.com}{sakkenino@gmail.com}}{\href{tel:+3584578723128}{+358 457 8723128}}}
+
+% \namesection{Firstname}{Lastname}{Full Stack Software Engineer}{\contactline{\href{https://www.mazumder.me}{mazumder.me}}{\href{https://www.github.com/sansquoi}{sansquoi}}{\href{https://www.linkedin.com/mazumders}{mazumders}}{\href{mailto:shubham.mazumder@gmail.com}{first.last@email.com}}{\href{tel:+1999999999}{9999999999}}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN ONE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{minipage}[t]{0.70\textwidth} 
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EXPERIENCE
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Experience}
+\runsubsection{Päivölä Institute}
+\descript{| System Adminstrator}
+\location{May 2022 – | Valkeakoski, Finland}
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\begin{tightemize}
+\sectionsep
+\item As an adminstritator in an institute I have helped students and teachers with their digital problems. This includes working with projectors, printers and Linux and Windows computers.
+\item Network administration is the other half of the work. I have updated modems and fixed switches around the campus, in addition to installing new ones.
+\item Ansible and server management has been a large part of it too, mostly updating webapps and laptops, though sometimes also fixing problems with Docker and HetznerCloud.
+\end{tightemize}
+\sectionsep
+
+\runsubsection{Päivölä Student Innovation Lab}
+\descript{| Sofware Developer}
+\location{Aug 2021 – June 2023 | Valkeakoski, Finland}
+\begin{tightemize}
+\sectionsep
+\item React.js is the language I have had to write the most. It mostly includes websites
+and -apps for companies like SimAnalytics. I have mostly worked with Typescript, styled-components and Flexbox.
+\item Python is my strongest language. In PSIL I have used it in APIs and working with
+sensors. I have used libraries like Pynput, Flask and Nympy.
+\item Rust is used with my current project, I am using it with WebAssembly and AES
+encryption algorithm. I am learning a lot about cryptography and cybersecurity.
+\item Gitlab has been heavily used for version control and working with peers. We have also been taught planning and coding as a team, using modern methods like Dailys and Scrum.
+\end{tightemize}
+\sectionsep
+
+\runsubsection{Sundberg Ilari}
+\descript{| Farm hand}
+\location{June 2021 | Mäntsälä, Finland}
+\begin{tightemize}
+\sectionsep
+\item Summer job for a week, working at a farm eight hour workdays.
+\item In addition to learning to work in a professional setting, I learned how farming and tractors work.
+\end{tightemize}
+\sectionsep
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Projects
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Projects}
+
+\runsubsection{Linux From Scratch}
+\descript{| GNU/Linux}
+\location{2022 - Current}
+\begin{tightemize}
+\item Linux built from scratch by compiling everything by hand, using the LFS book for help. 
+\item Also includes a homemade window manager using Kiwmi and Lua, and a simple package manager.
+\end{tightemize}
+\sectionsep
+
+\runsubsection{KPOM}
+\descript{| Python}
+\location{2022 - 2023}
+\begin{tightemize}
+\item KPOM is a tag game made with Pygame. I made in with friends in a few weeks, coding for days at a time.
+\end{tightemize}
+\sectionsep
+
+\runsubsection{Terminal Clicker}
+\descript{| Python, Rust}
+\location{2021 - Current}
+\begin{tightemize}
+\item Originally a simple Python clicker game made for fun, I have started to translate it into Rust with lots of extra features. 
+\end{tightemize}
+\sectionsep
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     AWARDS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% \section{Awards} 
+% \begin{tabular}{rll}
+% 2020	     & Finalist & Lorem Ipsum\\
+% 2018	     & $2^{nd}$ & Dolor Sit Amet\\
+% 2015	     & Finalist  & Cras posuere\\
+% \\
+% \end{tabular}
+% \sectionsep
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN TWO
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\end{minipage} 
+\hfill
+\begin{minipage}[t]{0.25\textwidth} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     SKILLS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Skills}
+\subsection{Programming}
+\sectionsep
+
+\location{Experienced:}
+Python \textbullet{} HTML \textbullet{} TypeScript \textbullet{} Rust \textbullet{} SQL \textbullet{} UNIX \\
+\sectionsep
+
+\location{Familiar:}
+CSS \textbullet{} C \textbullet{} Docker \textbullet{} Ansible  \textbullet{} Git \\
+\sectionsep
+
+\location{Libraries:}
+React \textbullet{} Numpy \textbullet{} Flask \textbullet{} WebAssembly
+
+\sectionsep
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EDUCATION
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Matriculation} 
+
+\location{ Mathematics }
+Laudatur \\
+\sectionsep
+
+\location{ Physics }
+Eximia \\
+\sectionsep
+
+\location{ English }
+Eximia \\
+\sectionsep
+
+\descript{(Valkeakosken Tietotien Lukio)}
+\sectionsep
+
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% %     REFERENCES
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{References} 
+\href{https://www.linkedin.com/in/joel-jakko/}{\textbf{Joel Jäkkö}, Project Manager, Päivölä Student Innovation Lab}
+\begingroup
+\setbox0=\hbox{
+\includegraphics[scale=0.1,trim={0 1cm 0cm 0cm}]{icons/main/mail.png}\hspace{0.3cm} joel.jakko@psil.fi
+}
+\parbox{\wd0}{\box0}
+\endgroup
+\begingroup
+\setbox0=\hbox{
+\includegraphics[scale=0.1,trim={0 1.25cm -0.4cm 0cm}]{icons/main/phone.png}\hspace{0.3cm}+358 440 484145
+}
+\parbox{\wd0}{\box0}\endgroup
+\\
+\sectionsep
+\href{https://github.com/aikain}{\textbf{Ville Nupponen}}, Head Administrator, Päivölä Institute 
+\\
+\begingroup
+\setbox0=\hbox{
+\includegraphics[scale=0.1,trim={0 1cm 0cm 0cm}]{icons/main/mail.png}\hspace{0.3cm} ville.nupponen@paivola.fi
+}
+\parbox{\wd0}{\box0}
+\endgroup
+\begingroup
+\setbox0=\hbox{
+\includegraphics[scale=0.1,trim={0 1.25cm -0.4cm 0cm}]{icons/main/phone.png}\hspace{0.3cm}+358 441 3001
+}
+\parbox{\wd0}{\box0}\endgroup
+\\
+\sectionsep
+\href{https://www.linkedin.com/in/johannes-alanen}{\textbf{Johannes Alanen}}, Full Stack Developer, Päivölä Student Innovation Lab 
+\\
+\begingroup
+\setbox0=\hbox{
+\includegraphics[scale=0.1,trim={0 1cm 0cm 0cm}]{icons/main/mail.png}\hspace{0.3cm} joh@nnes.fi
+}
+\parbox{\wd0}{\box0}
+\endgroup
+\begingroup
+\setbox0=\hbox{
+\includegraphics[scale=0.1,trim={0 1.25cm -0.4cm 0cm}]{icons/main/phone.png}\hspace{0.3cm}+358 452 027700
+}
+\parbox{\wd0}{\box0}\endgroup
+\\
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     COURSEWORK
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% \section{Coursework}
+
+% \subsection{Graduate}
+% Graduate Algorithms \textbullet{}\\ 
+% Advanced Computer Architecture \textbullet{}\\ 
+% Operating Systems \textbullet{}\\ 
+% Artificial Intelligence \textbullet{}\\
+% Visualization For Scientific Data \\
+% \sectionsep
+
+% \subsection{Undergraduate}
+
+% Database Management Systems \textbullet{}\\
+% Object Oriented Analysis and Design \textbullet{}\\
+% Artificial Intelligence and Expert Systems \textbullet{}\\
+% Scripting Languages and Web Tech \textbullet{}\\
+% Software Engineering \\
+
+\end{minipage} 
+\end{document}  \documentclass[]{article}
+
